@@ -9,9 +9,11 @@ const ProductRoute=require('./routes/product');
 const morgan=require('morgan');
 const bodyParser=require('body-parser');
 const PORT=process.env.PORT  ;
-const cors=require('cors');
-const path=require('path');
 
+const path=require('path');
+// const {fileURLToPath}=require('url');
+// const __filename=fileURLToPath(require.meta.url)
+// const __dirname=path.dirname(__filename)
 connectDB();
 const app=express();
 
